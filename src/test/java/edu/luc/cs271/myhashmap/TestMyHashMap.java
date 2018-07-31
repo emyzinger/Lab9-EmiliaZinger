@@ -9,26 +9,21 @@ import org.junit.Test;
 
 public class TestMyHashMap {
 
-  // TODO complete this test class
 
-  // TODO declare a reference to the SUT (system under test), i.e., MyHashMap
   MyHashMap<String, Integer> fixture;
 
   @Before
   public void setUp() {
-    // TODO create the SUT instance
     fixture = new MyHashMap<>();
   }
 
   @After
   public void tearDown() {
-    // TODO set the SUT instance to null
     fixture = null;
   }
 
   @Test
   public void testEmpty() {
-    // TODO verify that the SUT initially returns an empty map
     assertTrue(fixture.isEmpty());
     assertEquals(0, fixture.size());
     assertEquals(0, fixture.keySet().size());
@@ -38,7 +33,7 @@ public class TestMyHashMap {
 
   @Test
   public void testNonEmpty() {
-    // TODO run the SUT on a specific String iterator with some repeated words,
+    // TO DO run the SUT on a specific String iterator with some repeated words,
     // then use assertions to verify the correct counts
     // do this for at least two words in the iterator and two not in the iterator
     assertNull(fixture.put("hello", 3));
