@@ -4,13 +4,13 @@ buildscript {
     }
     dependencies {
         classpath 'com.github.ben-manes:gradle-versions-plugin:0.15.0'
-        classpath 'gradle.plugin.com.github.sherter.google-java-format:google-java-format-gradle-plugin:0.6'
+        //classpath 'gradle.plugin.com.github.sherter.google-java-format:google-java-format-gradle-plugin:0.6'
     }
 }
 
 apply plugin: 'application'
 apply plugin: 'com.github.ben-manes.versions'
-apply plugin: 'com.github.sherter.google-java-format'
+//apply plugin: 'com.github.sherter.google-java-format'
 
 libsDirName = 'lib' // simple workaround for error in startScripts task
 mainClassName = 'edu.luc.cs271.myhashmap.Main' // TODO change this setting to match your main class
@@ -42,6 +42,6 @@ run {
     standardOutput = System.out
 }
 
-googleJavaFormat {
-    toolVersion = '1.4'
-}
+//googleJavaFormat {
+//    toolVersion = '1.4'
+//}
